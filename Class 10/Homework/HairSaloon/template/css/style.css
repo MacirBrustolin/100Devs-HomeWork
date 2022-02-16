@@ -29,13 +29,117 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
-
+header{
+  padding: 1%;
+  min-height: 60px;
+  background: white;
 }
 
-footer {
-
+header nav > ul, header nav > a {
+  float: left;
+  width: 60%;
+  text-decoration: none;
+  text-align: center;
 }
+header nav > a {
+  width: 20%;
+}
+
+header nav input {
+  width: 20%;
+}
+
+header a {
+  text-decoration: none;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0 0;
+}
+
+header nav li {
+  
+  float: left;
+  width: 12%;
+}
+
+main > section {
+  width: 80%;
+  margin: auto;
+  min-height: 100px;
+  clear: both;
+}
+
+main > section ul {
+  margin: 0 10%;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+
+.lifloatleft {
+  padding: 2%;
+  width: 33.3333%;
+  float: left;
+}
+
+main > section:first-child {
+  background-image: url('http://placekitten.com/1920/1080');
+}
+
+main > section:first-child > h1 {
+  color: white;
+  padding-top: 5%;
+  font-size: 50px;
+  width: 20%;
+  margin: 2% 0;
+}
+
+main > section:first-child > p {
+  font-size: 10px;
+  color: white;
+  margin: 2% 0;
+  width: 100%;
+}
+
+main > section:first-child > a {
+  color: white;
+  background: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+main > section:first-child > section {
+  color: white;
+  min-height: 200px;
+  background: black;
+  width: 15%;
+  margin: 2% 0;
+  padding: 1% 0;
+}
+
+main > section:first-child > section > * {
+  padding: 5%;
+}
+
+main > section:first-child > section h3 {
+  margin-top: 5%;
+  padding: 5%;
+  border-left: 5px solid white;
+  font-size: 0.75rem;
+}
+
+main > section:first-child > section a {
+  color: black;
+  background: white;
+  text-decoration: none;
+  margin: 10%;
+  padding: 5%;
+}
+
+
 
 /******************************************
 /* ADDITIONAL STYLES
