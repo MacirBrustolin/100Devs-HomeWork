@@ -139,6 +139,93 @@ main > section:first-child > section a {
   padding: 5%;
 }
 
+main > section {
+  min-height: 200px;
+}
+
+.second-section {
+  width: 60%;
+  min-height: 200xppx;
+  margin: 5% auto;
+  min-height: 100px;
+  clear: both;
+}
+
+.second-section > section {
+  float: left;
+  width: 50%;
+  padding: 2%;
+}
+
+.second-section > section:first-child {
+  margin: 5% 0;
+}
+
+.second-section > section + section img {
+  margin: auto;
+}
+
+.third-section {
+  width: 60%;
+  min-height: 100px;
+  margin: 5% auto;
+  clear: both;
+}
+
+.third-section > section {
+  float: left;
+  width: 33.3333%;
+  padding: 2%;
+  text-align: center;
+}
+
+.third-section >section > div {
+  color: white;
+  background: black;
+  margin: 0 20%;
+  padding: 2%;
+  position: relative;
+  top: -40px;
+}
+
+.third-section >section > div > h3 {
+  margin: 2%;
+}
+
+.fourth-section {
+  width: 60%;
+  min-height: 100px;
+  margin: 5% auto;
+  clear: both;
+}
+
+.fifth-section {
+  width: 60%;
+  min-height: 100px;
+  margin: 5% auto;
+  clear: both;
+}
+
+.fifth-section > h2 {
+  text-align: center;
+}
+
+.fifth-section ul li {
+  float: left;
+  width: 33.3333%;
+  height: 200px;
+  padding: 1%;
+}
+
+.fifth-section img {
+  width:100%;
+  height:100%;
+}
+.fifth-section li:nth-child(even) {
+  height: 400px;
+}
+
+
 
 
 /******************************************
