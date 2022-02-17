@@ -29,6 +29,10 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
+html {
+  font-size: 62.5%;
+}
+
 a {
   text-decoration: none;
   color: #2d4457;
@@ -39,10 +43,11 @@ ul {
 }
 
 header {
+  font-size: 2rem;
   color: #2d4457;
   background:#f5f9fc ;
   margin: auto;
-  padding: 10px 50px;
+  padding: 1% 5%;
   height: 50px;
 }
 
@@ -54,6 +59,7 @@ header nav > * {
 }
 
 header nav ul {
+  font-size: 1.5rem;
   list-style: none;
   margin: 0 0;
 }
@@ -65,7 +71,7 @@ header nav li {
 }
 
 header nav > a:first-child {
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -81,10 +87,12 @@ header nav > a:last-child {
 }
 
 main {
+  font-size: 1.5rem;
   color: #2d4457;
   background: #f5f9fc;
   clear: both;
   margin: auto;
+  width: 100%;
 }
 
 main h3, main a {
@@ -94,8 +102,8 @@ main h3, main a {
 main > section {
   width: 66.6666%;
   margin: auto;
-  height: 800px;
-  padding: 100px;
+  min-height: 300px;
+  padding: 5% 0;
   padding-right: 0;
 }
 
@@ -111,7 +119,6 @@ main section section > a {
 
 main > section:first-child {
   background: #f5f9fc;
-  padding-right: 50px;
 }
 
 main section > section {
@@ -119,13 +126,13 @@ main section > section {
   float: left;
 }
 
-main section > section:first-child {
-  padding-right: 200px;
-  width: 40%;
+main section > section img {
+  width: 100%;
+  height: 100%;
 }
 
 main section > section:last-child {
-  padding-top: 50px;
+  padding-top: 5%;
   width: 100%;
 }
 
@@ -134,15 +141,37 @@ main section section ul {
 }
 
 main section section ul li {
-  padding-right: 35px;
+  padding: 2%;
   float: left;
-  width: 20%;
+  width: 25%;
+}
+
+main section section ul li img {
+  height: 5rem;
+  width: 5rem;
 }
 
 main > section:last-child{
   clear: both;
 }
 
+main > section + section {
+  margin: 0;
+  padding: 5% 17.7777%;
+  width: 100%;
+  background: white;
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media all and (max-width: 1024px) {
+  main section section ul li {
+    width: 100%;
+  }
+
+  main section > section {
+    width: 100%;
+  }
+}

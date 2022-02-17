@@ -21,15 +21,18 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
-}
 
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
 header{
+  font-size: 1rem;
   padding: 1%;
   min-height: 60px;
   background: white;
@@ -64,6 +67,10 @@ header nav li {
   width: 12%;
 }
 
+main {
+  font-size: 1rem;
+}
+
 main > section {
   width: 80%;
   margin: auto;
@@ -87,18 +94,20 @@ main > section ul {
 
 main > section:first-child {
   background-image: url('http://placekitten.com/1920/1080');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 main > section:first-child > h1 {
   color: white;
   padding-top: 5%;
-  font-size: 50px;
+  font-size: 5rem;
   width: 20%;
   margin: 2% 0;
 }
 
 main > section:first-child > p {
-  font-size: 10px;
+  font-size: 1rem;
   color: white;
   margin: 2% 0;
   width: 100%;
@@ -108,14 +117,14 @@ main > section:first-child > a {
   color: white;
   background: black;
   text-decoration: none;
-  padding: 10px;
+  padding: 1rem;
 }
 
 main > section:first-child > section {
   color: white;
-  min-height: 200px;
+  min-height: 20rem;
   background: black;
-  width: 15%;
+  width: 20rem;
   margin: 2% 0;
   padding: 1% 0;
 }
@@ -151,6 +160,11 @@ main > section {
   clear: both;
 }
 
+.second-section img {
+  width:100%;
+  height:100%;
+}
+
 .second-section > section {
   float: left;
   width: 50%;
@@ -170,6 +184,11 @@ main > section {
   min-height: 100px;
   margin: 5% auto;
   clear: both;
+}
+
+.third-section img {
+  width:100%;
+  height:100%;
 }
 
 .third-section > section {
@@ -231,3 +250,23 @@ main > section {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+
+@media all and (max-width: 1024px) {
+.lifloatleft {
+    width: 100%;
+  }
+
+  .second-section > section {
+    width: 100%;
+  }
+
+  .third-section > section {
+    width: 100%;
+  }
+
+  .fifth-section ul li {
+    width: 100%;
+  }
+}
+

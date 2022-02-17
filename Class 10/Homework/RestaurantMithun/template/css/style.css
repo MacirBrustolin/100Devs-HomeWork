@@ -29,13 +29,20 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
 header{
+  font-size: 1rem;
   padding: 1%;
-  height: 60px;
+  height: 6rem;
   background: white;
 }
 
 header nav > *{
+  font-size: 2rem;
   float: left;
   width: 66.6666%;
   text-decoration: none;
@@ -57,17 +64,25 @@ header nav ul {
 
 header nav li {
   float: left;
-  width: 10%;
+  width: 10rem;
 }
 
 header nav li input {
   width: 100%;
 }
 
+main {
+  font-size: 1rem;
+}
+
+span {
+  color: orange;
+}
+
 main > section {
-  min-height: 300px;
+  min-height: 100px;
   width: 80%;
-  margin: auto auto;
+  margin: auto;
   padding: 2.5% 0;
 }
 
@@ -75,6 +90,28 @@ main > section + section {
   width: 50%;
   text-align: center;
 } 
+
+.first-section {
+  font-size: 2rem;
+}
+
+.second-section {
+  font-size: 2rem;
+  text-align: left;
+  padding-left: 24%;
+}
+
+.third-section {
+  font-size: 2rem;
+}
+
+.fourth-section {
+  font-size: 2rem;
+}
+
+.fifth-section {
+  font-size: 2rem;
+}
 
 main a {
   text-decoration: none;
@@ -90,26 +127,42 @@ main li {
   float: left;
   text-align: center;
   width: 10%;
-  padding: 10px 0;
-  margin: 10px 0;
+  padding: 1rem 0;
+  margin: 1rem 0;
   
 }
 
 main section + section + section li {
-  border-bottom: 2px solid black;
+  border-bottom: 0.2rem solid black;
   width: 20%;
 }
 
 main section div {
+  padding: 0;
+  margin: 0;
   clear: both;
 }
 
 main section div img {
-  width: 25%;
-  margin: 5%;
+  width: 15%;
+  margin: 2%;
+}
+
+.fourth-section div:first-child {
+  float: left;
+}
+
+.costumer-img {
+  border-radius: 50%;
 }
 
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media all and (max-width: 1024px) {
+  main section div img {
+    width: 50%;
+  }
+}
