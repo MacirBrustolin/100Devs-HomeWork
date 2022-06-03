@@ -8,12 +8,12 @@ const rappers = {
         'birthName':'Sheyaa',
         'birthLocation':'London, England'
     },
-    'Chancelor':{
+    'chancelor':{
         'age':28,
         'birthName':'Sheyaa',
         'birthLocation':'London, England'
     },
-    'Dylan':{
+    'dylan':{
         'age':27,
         'birthName':'Sheyaa',
         'birthLocation':'London, England'
@@ -26,15 +26,15 @@ app.get('/', (request, response)=>{
 })
 
 app.get('/api/:rapperName', (request, response)=>{
-    const rappersName = request.params.rapperName
+    const rappersName = request.params.rapperName.toLocaleLowerCase()
     //response.json(rappers)
     if (rappers[rappersName]) {
         response.json(rappers[rappersName])
     }else{
-        response.json(rappers['Dylan'])
+        response.json(rappers['dylan'])
     }
 })
 
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log(`the server is rinnung on ${PORT}! You better go catch it!`)
 })
